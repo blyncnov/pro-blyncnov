@@ -1,0 +1,207 @@
+@import "./_reuseable/mixins.module";
+
+.services__ID {
+  background-color: #ffffff;
+}
+
+.services__row {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+
+  .services__row__Column {
+    padding: 0.5em;
+    border-radius: 3px;
+  }
+
+  .services__row__Column:nth-child(1) {
+    padding: 1em 0.5em;
+
+    .services__row__Column__Text {
+      h1 {
+        @include Title;
+        font-size: clamp(2.5rem, 1vw, 2rem);
+
+        span {
+          color: rgb(2, 131, 242);
+          text-decoration: underline;
+        }
+
+        @media (max-width: 1200px) {
+          font-size: clamp(2.3rem, 1vw, 2rem);
+        }
+
+        @media (max-width: 768px) {
+          font-size: clamp(1.7rem, 1vw, 2rem);
+        }
+      }
+
+      p {
+        line-height: 1.5;
+        font-weight: 500;
+        font-size: 16px;
+
+        .emphasis {
+          color: rgb(2, 131, 242);
+          font-style: italic;
+          font-size: 17px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+
+      button {
+        @include Button;
+        background-color: rgb(2, 131, 242);
+        color: white;
+        border: 1px solid rgb(2, 131, 242);
+        padding: 12px 24px;
+        min-height: 3.2rem;
+        margin-top: 1em;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+
+      .services__Social__Medium {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin-top: 1em;
+        align-items: center;
+        gap: 0.5em;
+
+        div {
+          display: flex;
+          gap: 0.3em;
+          font-family: "Crimson Text", serif !important;
+        }
+
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+
+  .services__row__Column:nth-child(2) {
+    // background-color: #dee9fb;
+    padding: 1em 0.5em;
+    box-shadow: rgb(204, 219, 232) 0.8px 1px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .services__row__Column {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-style: normal;
+    font-family: "Crimson Text", serif !important;
+
+    .services__Inner__Column {
+      background-color: #ffffff;
+      padding: 0.5em;
+      border-radius: 3px;
+      transition: all 0.2s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px inset;
+      }
+
+      .services__Inner__Column__Box {
+        padding: 0.1em 0.2em;
+        background: transparent;
+        animation: none;
+        border-radius: 2px;
+        border: 1px solid rgba(204, 214, 246, 0.311);
+
+        .services__Inner__Cloud {
+          display: grid;
+          grid-template-columns: 0.2fr 1fr;
+          gap: 1em;
+          align-items: center;
+          padding: 1em;
+          background-color: white;
+          border-radius: 4px;
+        }
+
+        div:nth-child(1) {
+          border-radius: 3px;
+          background-color: #ffffff;
+          font-style: normal;
+          font-family: "Crimson Text", serif !important;
+
+          h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.2em;
+          }
+
+          p {
+            opacity: 0.9;
+            font-size: 16px;
+          }
+        }
+
+        &:hover {
+          animation: colorchange 3s linear infinite;
+          background: radial-gradient(circle, #0ff 0%, #e0e5ec 100%);
+        }
+
+        @keyframes colorchange {
+          to {
+            filter: hue-rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+  }
+}
+
+.services__Skills {
+  padding: 1em;
+
+  h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .services__Skill__Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+
+    div {
+      display: flex;
+      gap: 0.5em;
+      align-items: center;
+      justify-content: flex-start;
+
+      h4 {
+        font-family: "Crimson Text", serif;
+        opacity: 0.9;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

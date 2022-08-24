@@ -1,0 +1,157 @@
+@import "./_reuseable/mixins.module";
+
+.Hero__container {
+  padding: 50px 0;
+  font-style: normal;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  grid-gap: 3em;
+
+  .Hero__Column {
+    width: 100%;
+    position: relative;
+    max-width: 100% !important;
+
+    .Hero__Text {
+      h1 {
+        font-size: clamp(3.5rem, 1vw, 40px);
+        font-family: "Lato", "Trebuchet MS", sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+        color: rgb(204, 214, 246);
+
+        @media (max-width: 1200px) {
+          font-size: clamp(2.5rem, 1vw, 40px);
+        }
+
+        @media (max-width: 768px) {
+          font-size: clamp(2rem, 1vw, 40px);
+        }
+      }
+
+      p {
+        font-size: clamp(1.2rem, 1vw, 2rem);
+        margin: 20px 0;
+        font-family: "Crimson Text", serif;
+        font-weight: 400;
+
+        span {
+          color: rgb(2, 131, 242);
+          transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .Hero__Button {
+        @include Flex;
+        justify-content: flex-start;
+        gap: 1em;
+
+        button {
+          @include Button;
+          background-color: transparent;
+          border: 1px solid rgb(2, 131, 242);
+          color: white;
+          padding: 19px 20px;
+          margin-top: 1em;
+          text-transform: capitalize;
+
+          &:nth-child(2) {
+            background-color: rgb(2, 131, 242);
+            color: white;
+          }
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 0 !important;
+    grid-template-columns: 1fr;
+
+    div:nth-child(2) {
+      display: block !important;
+    }
+  }
+
+  @media (max-width: 968px) {
+    padding: 100px 0;
+
+    div:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+.Hero__Image__Control {
+  max-width: 100% !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  img {
+    width: 100%;
+    max-width: 100% !important;
+  }
+}
+
+.Hero__Float__Data {
+  div:nth-child(1) {
+    color: #4e8d47;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    z-index: 1;
+  }
+  div:nth-child(2) {
+    color: #e09e27;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    z-index: 1;
+  }
+  div:nth-child(3) {
+    color: rgb(2, 131, 242);
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    z-index: 1;
+  }
+  div:nth-child(4) {
+    color: #0c2e5e;
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    z-index: 1;
+  }
+  div:nth-child(5) {
+    color: rgb(2, 131, 242);
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    z-index: 1;
+  }
+  div:nth-child(6) {
+    color: #9d56f7;
+    position: absolute;
+    top: 1%;
+    right: 40%;
+    z-index: 1;
+  }
+  div:nth-child(7) {
+    color: rgb(2, 131, 242);
+    position: absolute;
+    top: 6%;
+    left: 13%;
+    z-index: 1;
+  }
+}
