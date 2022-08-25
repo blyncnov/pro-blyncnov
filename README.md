@@ -13,7 +13,7 @@ This `Portfolio website` is currently under development .
 
 ## Demo
 
-Live Site URl : [Blyncnov.com](https://blyncnov.vercel.app)
+Live Site URl : [blyncnov](https://pro-blyncnov.vercel.app)
 
 ## My Process
 I started this `Project` by bootraping Next js with prefix -ts and then installing scss .. I love to create the folder structure first like so.
@@ -24,6 +24,7 @@ I started this `Project` by bootraping Next js with prefix -ts and then installi
 * Next js
 * Typescript
 * Module SCSS 
+* Framer Motion
 * Mobile first workflow
 
 ## Time Period
