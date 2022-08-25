@@ -14,7 +14,7 @@ const style = { fontSize: "1.3em" };
 
 const Projects = () => {
   return (
-    <div id={classes.project}>
+    <div id="projects" className={classes.project}>
       <section className={classes.services}>
         <div className={Layout.layout}>
           <div className={classes.Projects__Container}>
@@ -33,7 +33,7 @@ const Projects = () => {
                       <h2>
                         {project.ProjectName}
                         <span>
-                          <Link href="/">
+                          <Link href={`${project.ProjectUrl}`} target="_blank">
                             <a>
                               <BsLink style={style} />
                             </a>
@@ -53,14 +53,14 @@ const Projects = () => {
                       <br />
                       <div className={classes.Projects__Container__Demo}>
                         <h3>
-                          <Link href="/">
+                          <Link href={`${project.GithubUrl}`}>
                             <a>
                               <SiGithub style={style} />
                             </a>
                           </Link>
                         </h3>
                         <h3>
-                          <Link href="/">
+                          <Link href={`${project.ProjectUrl}`}>
                             <a>
                               <BsLink style={style} />
                             </a>

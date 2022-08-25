@@ -20,7 +20,7 @@ import Skills from "../data/Info";
 
 const Services = () => {
   return (
-    <section id="services" className={classes.services__ID}>
+    <section id="about" className={classes.services__ID}>
       <br />
       <br />
       <div className={Layout.layout}>

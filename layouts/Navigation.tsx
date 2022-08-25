@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 // Navigation Data
@@ -42,9 +42,15 @@ const Navigation = () => {
               <ul>
                 {NavigationData.map((item) => {
                   return (
-                    <li key={item.id} onClick={isClickedHandler}>
-                      <span>{`0${item.id}`}.</span>
-                      {`${item.name}`}
+                    <li key={item.id}>
+                      <Link href={`/${item.url}`} target="_blank">
+                        <a>
+                          <h4 onClick={isClickedHandler}>
+                            <span>{`0${item.id}`}.</span>
+                            {`${item.name}`}
+                          </h4>
+                        </a>
+                      </Link>
                     </li>
                   );
                 })}
