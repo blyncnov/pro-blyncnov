@@ -54,7 +54,11 @@ const Navigation = () => {
                     </li>
                   );
                 })}
-                <button>Download Resume</button>
+                <button>
+                  <Link href="https://drive.google.com/file/d/1QrlbNbqbPvQCl09pTz-WRTlr1G66v_xy/view?usp=sharing">
+                    <a> Download Resume</a>
+                  </Link>
+                </button>
               </ul>
             </div>
             <div

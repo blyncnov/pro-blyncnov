@@ -11,7 +11,8 @@ export const AllProjectData = [
     id: 1,
     ProjectName: "Drop-hq  ",
     ProjectTechUsed: ["Next Js", "SCSS", "Redux ", "Vercel", "Node js"],
-    ProjectDescription: "A Food Ordering and delivery service.",
+    ProjectDescription:
+      "A Low budget Food Ordering and Delivery Web Application for Students ",
     ProjectImage: Drophq,
     ProjectUrl: "https://drop-hq.vercel.app/",
     GithubUrl: "https://github.com/blyncnov/DropHQ",
@@ -58,7 +59,7 @@ export const AllProjectData = [
       "MetaMask",
     ],
     ProjectDescription:
-      "A web3 Ecommerce dapp for grocery, connected to ethers and blockchain. all payment is done in crypto currency. ",
+      "A web3 Ecommerce dapp for grocery, connected to ethers and blockchain.  ",
     ProjectImage: Project5,
     ProjectUrl: "https://fichta-mart.vercel.app",
     GithubUrl: "https://github.com/blyncnov/fichta ",

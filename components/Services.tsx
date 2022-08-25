@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Layout from "../styles/layouts/Index.module.scss";
 import classes from "../styles/Services.module.scss";
@@ -86,7 +87,11 @@ const Services = () => {
 
                 <br />
                 <div className="group__button">
-                  <button>DOWNLOAD CV</button>
+                  <button>
+                    <Link href="https://drive.google.com/file/d/1QrlbNbqbPvQCl09pTz-WRTlr1G66v_xy/view?usp=sharing">
+                      <a> DOWNLOAD CV</a>
+                    </Link>
+                  </button>
                 </div>
               </div>
             </div>

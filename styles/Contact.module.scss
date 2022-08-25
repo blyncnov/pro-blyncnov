@@ -1,0 +1,40 @@
+@import "./_reuseable/mixins.module";
+
+.contact__container {
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+  flex-direction: column;
+
+  h2 {
+    font-style: normal;
+    font-size: clamp(2rem, 1vw, 40px);
+
+    @media (max-width: 768px) {
+      font-size: clamp(1.5rem, 1vw, 40px);
+    }
+  }
+
+  p {
+    max-width: 60%;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  button {
+    @include Button;
+    background-color: transparent;
+    border: 1px solid #0b192e;
+    color: #0b192e;
+    padding: 12px 30px;
+    margin-top: 1em;
+    text-transform: capitalize;
+  }
+}

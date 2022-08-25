@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
@@ -59,14 +60,19 @@ const Hero = () => {
                   animate={{ opacity: 1 }}
                   transition={{ type: "spring", duration: 2, delay: 0.1 }}
                 >
-                  HIRE ME
+                  <Link href="mailto:bholuwatife00@gmail.com">
+                    <a>HIRE ME</a>
+                  </Link>
                 </motion.button>
+
                 <motion.button
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ type: "spring", duration: 5, delay: 0.3 }}
                 >
-                  SEE MY WORK
+                  <Link href="#projects">
+                    <a>SEE MY WORK</a>
+                  </Link>
                 </motion.button>
               </div>
             </div>

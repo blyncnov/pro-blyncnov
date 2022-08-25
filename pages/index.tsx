@@ -3,9 +3,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import Header from "../layouts/Header";
-import Brands from "../components/Brands";
 import Services from "../components/Services";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -19,9 +19,9 @@ const Home: NextPage = () => {
         <Header />
         <div className="Index__Layout">
           <Services />
-          {/* <Brands /> */}
           <Projects />
         </div>
+        <Contact />
       </div>
     </div>
   );

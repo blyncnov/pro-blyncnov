@@ -14,7 +14,7 @@ const style = { fontSize: "1.3em" };
 
 const Projects = () => {
   return (
-    <div id="projects" className={classes.project}>
+    <div id="projects" className={classes.projects}>
       <section className={classes.services}>
         <div className={Layout.layout}>
           <div className={classes.Projects__Container}>
@@ -75,9 +75,6 @@ const Projects = () => {
                           : classes.Reverse
                       }
                     >
-                      {/* // nth(2){
-                      reverseX: true;
-                      } */}
                       <div
                         className={
                           classes.Projects__Container__Grid__InnerImage
