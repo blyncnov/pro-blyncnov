@@ -15,13 +15,13 @@ const Contact = () => {
           <div className={classes.contact__container}>
             <h2>Get In Touch</h2>
             <p>
-              Although I’m not currently looking for any new opportunities, my
-              inbox is always open. Whether you have a question or just want to
-              say hi, I’ll try my best to get back to you!
+              I’m looking for any new opportunities, my inbox is always open.
+              Interested in working together ? or just want to talk ? I’ll buy
+              the coffee.
             </p>
             <Link href="mailto:bholuwatife00@gmail.com">
               <a>
-                <button>Say Hi To Me</button>
+                <button>Lets do this</button>
               </a>
             </Link>
             <br />

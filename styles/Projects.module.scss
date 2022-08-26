@@ -31,7 +31,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 80px;
+  gap: 50px;
 
   .Projects__Container__Grid {
     width: 100%;
@@ -39,6 +39,22 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin: 0 auto;
+    border: 1px solid #eee;
+    padding: 1em 0.5em;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+
+    &:active {
+      transform: translateY(-10px);
+      animation: colorchange 3s linear infinite;
+      border: 1px solid radial-gradient(circle, #0ff 0%, #e0e5ec 100%);
+    }
+
+    @keyframes colorchange {
+      to {
+        filter: hue-rotate(360deg);
+      }
+    }
 
     .Reverse {
       order: -1 !important;
@@ -93,7 +109,7 @@
         padding: 10px 0.5em;
         border-radius: 2px;
         text-align: start !important;
-        margin: 0.4em 0;
+        margin: 0.4em 0 1em 0;
       }
 
       .Projects__Container__Demo {
@@ -118,6 +134,7 @@
       padding: 1em 1em;
       border: 1px solid #eee;
       border-radius: 3px;
+      gap: 20px;
       box-shadow: rgba(0, 0, 0, 0.12) 0px 0.3px 0.3px;
     }
   }
@@ -127,4 +144,40 @@
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
+}
+
+.Mobile_Title {
+  display: none;
+  background: radial-gradient(circle, #0ff 0%, #e0e5ec 100%);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+
+  @keyframes colorchange {
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.Mobile_Title__Inverse {
+  display: block;
+  background: radial-gradient(circle, #0ff 0%, #e0e5ec 100%);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+
+  @keyframes colorchange {
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }

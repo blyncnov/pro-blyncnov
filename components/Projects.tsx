@@ -30,7 +30,7 @@ const Projects = () => {
                     key={project.id}
                   >
                     <div>
-                      <h2>
+                      <h2 className={classes.Mobile_Title__Inverse}>
                         {project.ProjectName}
                         <span>
                           <Link href={`${project.ProjectUrl}`} target="_blank">
@@ -68,6 +68,7 @@ const Projects = () => {
                         </h3>
                       </div>
                     </div>
+
                     <div
                       className={
                         project.reverseX
@@ -75,6 +76,17 @@ const Projects = () => {
                           : classes.Reverse
                       }
                     >
+                      <h2 className={classes.Mobile_Title}>
+                        {project.ProjectName}
+                        <span>
+                          <Link href={`${project.ProjectUrl}`} target="_blank">
+                            <a>
+                              <BsLink style={style} />
+                            </a>
+                          </Link>
+                        </span>
+                      </h2>
+                      <br />
                       <div
                         className={
                           classes.Projects__Container__Grid__InnerImage
