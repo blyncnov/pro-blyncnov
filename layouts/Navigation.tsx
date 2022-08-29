@@ -55,7 +55,7 @@ const Navigation = () => {
                   );
                 })}
                 <button>
-                  <Link href="https://drive.google.com/file/d/1QrlbNbqbPvQCl09pTz-WRTlr1G66v_xy/view?usp=sharing">
+                  <Link href="https://drive.google.com/file/d/1g1VqGMLwJDPR1MssmKQeLm9WxTBxvTR1/view?usp=sharing">
                     <a> Download Resume</a>
                   </Link>
                 </button>

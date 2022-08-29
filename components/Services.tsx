@@ -88,7 +88,7 @@ const Services = () => {
                 <br />
                 <div className="group__button">
                   <button>
-                    <Link href="https://drive.google.com/file/d/1QrlbNbqbPvQCl09pTz-WRTlr1G66v_xy/view?usp=sharing">
+                    <Link href="https://drive.google.com/file/d/1g1VqGMLwJDPR1MssmKQeLm9WxTBxvTR1/view?usp=sharing">
                       <a> DOWNLOAD CV</a>
                     </Link>
                   </button>
